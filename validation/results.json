@@ -1,0 +1,96 @@
+{
+  "tune": {
+    "scenarios": {
+      "A": {
+        "n": 5,
+        "verdict_ok": 5,
+        "recall_hits": 5,
+        "recall_total": 5,
+        "top1_ok": 5,
+        "top1_n": 5,
+        "decoy_ok": 5,
+        "decoy_n": 5,
+        "narration_ok": 5,
+        "narration_n": 5
+      },
+      "B": {
+        "n": 5,
+        "verdict_ok": 5,
+        "recall_hits": 10,
+        "recall_total": 10,
+        "top1_ok": 0,
+        "top1_n": 0,
+        "decoy_ok": 0,
+        "decoy_n": 0,
+        "narration_ok": 5,
+        "narration_n": 5
+      },
+      "C": {
+        "n": 5,
+        "verdict_ok": 5,
+        "recall_hits": 0,
+        "recall_total": 0,
+        "top1_ok": 0,
+        "top1_n": 0,
+        "decoy_ok": 5,
+        "decoy_n": 5,
+        "narration_ok": 5,
+        "narration_n": 5
+      }
+    },
+    "failures": []
+  },
+  "test": {
+    "scenarios": {
+      "A": {
+        "n": 15,
+        "verdict_ok": 15,
+        "recall_hits": 15,
+        "recall_total": 15,
+        "top1_ok": 15,
+        "top1_n": 15,
+        "decoy_ok": 15,
+        "decoy_n": 15,
+        "narration_ok": 15,
+        "narration_n": 15
+      },
+      "B": {
+        "n": 15,
+        "verdict_ok": 14,
+        "recall_hits": 30,
+        "recall_total": 30,
+        "top1_ok": 0,
+        "top1_n": 0,
+        "decoy_ok": 0,
+        "decoy_n": 0,
+        "narration_ok": 15,
+        "narration_n": 15
+      },
+      "C": {
+        "n": 15,
+        "verdict_ok": 15,
+        "recall_hits": 0,
+        "recall_total": 0,
+        "top1_ok": 0,
+        "top1_n": 0,
+        "decoy_ok": 14,
+        "decoy_n": 15,
+        "narration_ok": 15,
+        "narration_n": 15
+      }
+    },
+    "failures": [
+      {
+        "scenario": "B",
+        "seed": 9,
+        "expected": "confounded",
+        "got": "ranked",
+        "top3": [
+          "batch:M-204",
+          "channel:temperature:high",
+          "note:machine:86"
+        ]
+      }
+    ]
+  }
+}
