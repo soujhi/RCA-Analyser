@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+data/secom/
+test-results/
+docs/demo-video/
+scratch/
+node_modules/
+frontend/node_modules/
+dist/
+.figma/
